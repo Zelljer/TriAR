@@ -1,0 +1,14 @@
+﻿<Window x:Class="TriAR.Window.WeatherSearch"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TriAR.Window"
+        mc:Ignorable="d"
+        Title="WeatherSearch" Height="450" Width="450">
+    <Grid>
+        <TextBlock Text="Введите название города для определения погоды" Style="{StaticResource TitleText}"/>
+        <TextBox Text="{Binding TownName, Mode=TwoWay}"/>
+        <Button Command="{Binding SearchButton_Click}" Content="Определить" Style="{StaticResource CenterButton}"/>
+    </Grid>
+</Window>
